@@ -1,0 +1,20 @@
+{
+  "id": "icalendar",
+  "name": "iCalendar Component",
+  "description": "Software component for parsing, validating, and serializing iCalendar (text/calendar) data.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/icalendar",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/icalendar/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0/part.json"
+    }
+  }
+}

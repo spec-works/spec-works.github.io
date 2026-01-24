@@ -1,0 +1,20 @@
+{
+  "id": "vcard",
+  "name": "vCard Component",
+  "description": "Software component for parsing, validating, and serializing vCard data.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/vcard",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/vcard/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0/part.json"
+    }
+  }
+}
