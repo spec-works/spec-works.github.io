@@ -20,6 +20,8 @@
       "_appTitle": "SpecWorks Factory",
       "_appName": "SpecWorks",
       "_appFooter": "SpecWorks - Specification-Centric Software Components",
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/logo.svg",
       "_enableSearch": true,
       "_enableNewTab": true,
       "_extraCss": ["styles/main.css"]
