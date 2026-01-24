@@ -32,6 +32,11 @@ jobs:
       - name: Build documentation
         run: docfx docs/docfx.json
 
+      - name: Copy registry to build output
+        run: |
+          mkdir -p docs/_site/registry
+          cp -r registry/* docs/_site/registry/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
