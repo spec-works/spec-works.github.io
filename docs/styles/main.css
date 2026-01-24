@@ -303,15 +303,39 @@ li:contains("✅")::before {
 
 /* Sidebar Navigation */
 .sidenav,
-.toc {
-  background: rgba(255, 255, 255, 0.95);
-  border-right: 3px solid var(--factory-border);
+.toc,
+aside,
+.affix {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-right: 3px solid var(--factory-border) !important;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
+/* TOC and Sidebar Headings - ensure readability */
+.sidenav h5,
+.sidenav h6,
+.toc h5,
+.toc h6,
+aside h5,
+aside h6,
+.affix h5,
+.affix h6,
+.sideaffix h5,
+.sideaffix h6 {
+  color: var(--factory-dark) !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 0.85rem !important;
+  padding: 0.5rem 1rem !important;
+  margin: 0.5rem 0 !important;
+  border-bottom: 2px solid var(--factory-orange) !important;
+}
+
 .sidenav .nav-link,
-.toc .nav-link {
-  color: var(--factory-steel);
+.toc .nav-link,
+.affix .nav-link {
+  color: var(--factory-steel) !important;
   border-left: 3px solid transparent;
   transition: all 0.2s ease;
 }
@@ -319,11 +343,50 @@ li:contains("✅")::before {
 .sidenav .nav-link:hover,
 .toc .nav-link:hover,
 .sidenav .nav-link.active,
-.toc .nav-link.active {
-  background: rgba(0, 119, 190, 0.1);
-  border-left: 3px solid var(--factory-orange);
-  color: var(--factory-dark);
+.toc .nav-link.active,
+.affix .nav-link:hover,
+.affix .nav-link.active {
+  background: rgba(0, 119, 190, 0.1) !important;
+  border-left: 3px solid var(--factory-orange) !important;
+  color: var(--factory-dark) !important;
   transform: translateX(4px);
+}
+
+/* Ensure all text in sidebars is dark for readability on light background */
+.sidenav,
+.sidenav *,
+.toc,
+.toc *,
+aside,
+aside *,
+.affix,
+.affix *,
+.sideaffix,
+.sideaffix * {
+  background: transparent;
+}
+
+/* Override any headings that might have dark backgrounds */
+.sidenav h1,
+.sidenav h2,
+.sidenav h3,
+.sidenav h4,
+.toc h1,
+.toc h2,
+.toc h3,
+.toc h4,
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+.affix h1,
+.affix h2,
+.affix h3,
+.affix h4 {
+  color: var(--factory-dark) !important;
+  background: transparent !important;
+  border-left: none !important;
+  padding-left: 1rem !important;
 }
 
 /* Alert Boxes - Industrial Warning Style */
