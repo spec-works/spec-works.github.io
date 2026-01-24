@@ -75,7 +75,11 @@ var patch = JsonDiffer.Diff(original, modified);
 - [Factory Specification](specification/factory-spec.md) - Complete specification for the SpecWorks Factory pattern
 - [Conventions](specification/conventions.md) - Standards and patterns used across all components
 - [Architecture Decision Records](specification/adr/index.md) - Design decisions and rationale
-- [Creating Your Own Factory](specification/factory-spec.md#appendix-a-creating-your-own-factory) - Guide to creating your own specification factory
+
+## Contributing
+
+- **[Creating a New Part](contributing/create-part.md)** - Step-by-step guide to adding a new component to the factory
+- [Creating Your Own Factory](specification/factory-spec.md#appendix-a-creating-your-own-factory) - Build your own specification factory
 
 ## Goals
 
@@ -132,6 +136,7 @@ This enables:
 ## Community
 
 - **GitHub Organization**: [github.com/spec-works](https://github.com/spec-works)
+- **Contributing**: [Create a new Part](contributing/create-part.md) or improve existing ones
 - **Issues and Discussions**: Use each Part's repository for specific issues
 - **Factory Specification**: [specification repository](https://github.com/spec-works/specification)
 
