@@ -1,0 +1,8 @@
+- name: Home
+  href: index.md
+- name: Parts Catalog
+  href: parts/index.md
+- name: Specification
+  href: specification/toc.yml
+- name: GitHub
+  href: https://github.com/spec-works

@@ -1,0 +1,30 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": ["**.md", "**.yml"],
+        "exclude": ["obj/**", "_site/**", "**/bin/**", "**/obj/**"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "output": "_site",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appTitle": "SpecWorks Factory",
+      "_appName": "SpecWorks",
+      "_appFooter": "SpecWorks - Specification-Centric Software Components",
+      "_enableSearch": true,
+      "_enableNewTab": true
+    },
+    "fileMetadata": {
+      "_disableContribution": {
+        "specification/**": false,
+        "parts/**": false
+      }
+    }
+  }
+}
