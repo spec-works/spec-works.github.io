@@ -4,24 +4,24 @@ This guide walks you through the complete process of creating a new Part for the
 
 ## Overview
 
-A **Part** is a software component that implements one or more public specifications. Creating a new Part involves 12 key steps and typically takes 1-4 weeks depending on specification complexity.
+A **Part** is a software component that implements one or more public specifications. Creating a new Part involves 12 key steps.
 
 ## Quick Reference
 
-| Step | Task | Time | Required |
-|------|------|------|----------|
-| 1 | Choose Specification | 1 hour | ✅ |
-| 2 | Plan Your Part | 2 hours | ✅ |
-| 3 | Create Repository | 30 min | ✅ |
-| 4 | Create specs.json | 15 min | ✅ |
-| 5 | Write README.md | 1 hour | ✅ |
-| 6 | Add Test Cases | 1-2 days | ✅ |
-| 7 | Implement Specification | 1-3 weeks | ✅ |
-| 8 | Add Tests | 2-5 days | ✅ |
-| 9 | Add CI/CD | 1 hour | ✅ |
-| 10 | Publish Packages | 2 hours | ✅ |
-| 11 | Register in xRegistry | 15 min | ✅ |
-| 12 | Documentation | 1-2 days | Optional |
+| Step | Task | Required |
+|------|------|----------|
+| 1 | Choose Specification | ✅ |
+| 2 | Plan Your Part | ✅ |
+| 3 | Create Repository | ✅ |
+| 4 | Create specs.json | ✅ |
+| 5 | Write README.md | ✅ |
+| 6 | Add Test Cases | ✅ |
+| 7 | Implement Specification | ✅ |
+| 8 | Add Tests | ✅ |
+| 9 | Add CI/CD | ✅ |
+| 10 | Publish Packages | ✅ |
+| 11 | Register in xRegistry | ✅ |
+| 12 | Documentation | Optional |
 
 [View detailed step-by-step guide →](#step-by-step-guide)
 
