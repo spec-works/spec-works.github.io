@@ -4,11 +4,11 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px; /* Increased spacing between logo and text */
 }
 
 .navbar-brand img {
-  margin-right: 8px;
+  margin-right: 0;
 }
 
 /* Ensure navigation items are vertically aligned */
