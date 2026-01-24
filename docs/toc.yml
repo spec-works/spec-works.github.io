@@ -2,6 +2,8 @@
   href: index.md
 - name: Parts Catalog
   href: parts/index.md
+- name: Contributing
+  href: contributing/create-part.md
 - name: Specification
   href: specification/toc.yml
 - name: GitHub
