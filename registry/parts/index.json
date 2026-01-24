@@ -1,0 +1,125 @@
+{
+  "count": 6,
+  "parts": {
+    "icalendar": {
+      "id": "icalendar",
+      "name": "iCalendar Component",
+      "description": "Software component for parsing, validating, and serializing iCalendar (text/calendar) data.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/icalendar",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/icalendar/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/icalendar/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "jsondiff": {
+      "id": "jsondiff",
+      "name": "JsonDiff Component",
+      "description": "Software component for generating JSON Patch (RFC 6902) documents by comparing two JSON objects.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/jsondiff",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/jsondiff/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "linkset": {
+      "id": "linkset",
+      "name": "linkset Component",
+      "description": "Software component for parsing and serializing linkset documents (application/linkset+json).",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/linkset",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/linkset/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/linkset/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/linkset/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/linkset/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "markmyword": {
+      "id": "markmyword",
+      "name": "MarkMyWord Component",
+      "description": "Software component for bidirectional conversion between CommonMark/GitHub Flavored Markdown and Microsoft Word (.docx) documents.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/markmyword",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/markmyword/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "ratelimiter": {
+      "id": "ratelimiter",
+      "name": "RateLimiter Component",
+      "description": "Software component for client-side rate limiting and traffic shaping based on HTTP rate limit headers.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/ratelimiter",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/ratelimiter/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "vcard": {
+      "id": "vcard",
+      "name": "vCard Component",
+      "description": "Software component for parsing, validating, and serializing vCard data.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/vcard",
+      "defaultversionid": "1.0.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/vcard/versions",
+      "versionscount": 1,
+      "versions": {
+        "1.0.0": {
+          "self": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "1.0.0",
+          "parturl": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0/part.json"
+        }
+      }
+    }
+  }
+}

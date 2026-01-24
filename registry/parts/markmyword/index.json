@@ -1,0 +1,20 @@
+{
+  "id": "markmyword",
+  "name": "MarkMyWord Component",
+  "description": "Software component for bidirectional conversion between CommonMark/GitHub Flavored Markdown and Microsoft Word (.docx) documents.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/markmyword",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/markmyword/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/markmyword/versions/1.0.0/part.json"
+    }
+  }
+}

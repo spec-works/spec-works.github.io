@@ -1,0 +1,20 @@
+{
+  "id": "ratelimiter",
+  "name": "RateLimiter Component",
+  "description": "Software component for client-side rate limiting and traffic shaping based on HTTP rate limit headers.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/ratelimiter",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/ratelimiter/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/ratelimiter/versions/1.0.0/part.json"
+    }
+  }
+}

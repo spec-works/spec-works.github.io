@@ -1,0 +1,20 @@
+{
+  "id": "jsondiff",
+  "name": "JsonDiff Component",
+  "description": "Software component for generating JSON Patch (RFC 6902) documents by comparing two JSON objects.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/jsondiff",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/jsondiff/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/jsondiff/versions/1.0.0/part.json"
+    }
+  }
+}
