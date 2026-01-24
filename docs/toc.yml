@@ -6,5 +6,7 @@
   href: contributing/create-part.md
 - name: Specification
   href: specification/toc.yml
+- name: Registry
+  href: https://spec-works.github.io/registry/
 - name: GitHub
   href: https://github.com/spec-works
