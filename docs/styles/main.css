@@ -560,3 +560,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Logo and branding fixes */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between logo and text */
+}
+
+.navbar-brand img {
+  margin-right: 8px; /* Additional spacing after logo */
+}
+
+.navbar-brand .brand-title {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure navigation items are vertically aligned */
+.navbar-nav {
+  align-items: center;
+}
