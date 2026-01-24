@@ -1,0 +1,354 @@
+/* SpecWorks Factory Industrial Theme */
+
+:root {
+  --factory-dark: #1a1a1a;
+  --factory-gray: #2d2d2d;
+  --factory-steel: #3a4750;
+  --factory-blue: #0077be;
+  --factory-orange: #ff6b35;
+  --factory-yellow: #ffc107;
+  --factory-light: #eceff1;
+  --factory-border: #455a64;
+  --factory-accent: #00acc1;
+}
+
+/* Body and Background */
+body {
+  background: linear-gradient(135deg, var(--factory-dark) 0%, var(--factory-gray) 100%);
+  color: var(--factory-light);
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Add subtle grid pattern overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .02) 25%, rgba(255, 255, 255, .02) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .02) 75%, rgba(255, 255, 255, .02) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .02) 25%, rgba(255, 255, 255, .02) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .02) 75%, rgba(255, 255, 255, .02) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, var(--factory-steel) 0%, var(--factory-gray) 100%) !important;
+  border-bottom: 3px solid var(--factory-orange);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--factory-light) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand::before {
+  content: '⚙ ';
+  color: var(--factory-orange);
+}
+
+.navbar-nav .nav-link {
+  color: var(--factory-light) !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--factory-orange) !important;
+  border-bottom: 2px solid var(--factory-orange);
+}
+
+/* Main Content Container */
+.container,
+.container-fluid,
+article {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.container::before,
+.container-fluid::before,
+article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--factory-orange) 0%,
+    var(--factory-yellow) 50%,
+    var(--factory-blue) 100%);
+}
+
+/* Headings */
+h1 {
+  color: var(--factory-dark) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 6px solid var(--factory-orange);
+  padding-left: 1rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1.5rem !important;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--factory-orange);
+}
+
+h1::before {
+  content: '◆ ';
+  color: var(--factory-orange);
+  font-size: 0.8em;
+  margin-right: 0.3em;
+}
+
+h2 {
+  color: var(--factory-steel) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 4px solid var(--factory-blue);
+  padding-left: 0.8rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+h2::before {
+  content: '◆ ';
+  color: var(--factory-blue);
+  font-size: 0.8em;
+  margin-right: 0.3em;
+}
+
+h3 {
+  color: var(--factory-steel) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--factory-border);
+  padding-bottom: 0.5rem;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* Links */
+a {
+  color: var(--factory-blue) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: var(--factory-orange) !important;
+  border-bottom: 1px solid var(--factory-orange);
+}
+
+/* Tables - Industrial Style */
+table {
+  border: 2px solid var(--factory-border) !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+thead {
+  background: linear-gradient(180deg, var(--factory-steel) 0%, var(--factory-gray) 100%) !important;
+  color: var(--factory-light) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+thead th {
+  border-bottom: 3px solid var(--factory-orange) !important;
+  padding: 1rem !important;
+  color: var(--factory-light) !important;
+}
+
+tbody tr {
+  transition: all 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(236, 239, 241, 0.3) !important;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 119, 190, 0.1) !important;
+  transform: translateX(2px);
+}
+
+tbody td {
+  padding: 0.8rem !important;
+  border-bottom: 1px solid rgba(69, 90, 100, 0.2) !important;
+  color: var(--factory-dark) !important;
+}
+
+/* Code Blocks - Industrial Terminal Style */
+pre {
+  background: var(--factory-dark) !important;
+  border: 2px solid var(--factory-border) !important;
+  border-left: 4px solid var(--factory-orange) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: var(--factory-light) !important;
+}
+
+code {
+  color: var(--factory-accent) !important;
+  background: rgba(26, 26, 26, 0.1) !important;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+pre code {
+  background: transparent !important;
+  padding: 0;
+  color: #5ce65c !important;
+}
+
+/* Buttons and Interactive Elements */
+.btn,
+button {
+  background: linear-gradient(135deg, var(--factory-blue) 0%, var(--factory-steel) 100%) !important;
+  border: 2px solid var(--factory-border) !important;
+  color: var(--factory-light) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover,
+button:hover {
+  background: linear-gradient(135deg, var(--factory-orange) 0%, var(--factory-yellow) 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--factory-orange) !important;
+  background: rgba(255, 107, 53, 0.05);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--factory-steel) !important;
+}
+
+/* Lists with Industrial Bullets */
+ul li::marker {
+  color: var(--factory-orange);
+  font-weight: bold;
+}
+
+/* Footer */
+.footer,
+footer {
+  background: linear-gradient(90deg, var(--factory-dark) 0%, var(--factory-gray) 100%) !important;
+  color: var(--factory-light) !important;
+  border-top: 3px solid var(--factory-orange) !important;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Sidebar Navigation */
+.sidenav,
+.toc,
+aside {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-right: 3px solid var(--factory-border) !important;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav .nav-link,
+.toc .nav-link {
+  color: var(--factory-steel) !important;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidenav .nav-link:hover,
+.toc .nav-link:hover,
+.sidenav .nav-link.active,
+.toc .nav-link.active {
+  background: rgba(0, 119, 190, 0.1) !important;
+  border-left: 3px solid var(--factory-orange) !important;
+  color: var(--factory-dark) !important;
+  transform: translateX(4px);
+}
+
+/* Horizontal Rules */
+hr {
+  border: 0 !important;
+  height: 3px !important;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--factory-orange) 20%,
+    var(--factory-orange) 80%,
+    transparent 100%) !important;
+  margin: 2rem 0 !important;
+}
+
+/* Make article text readable */
+article,
+.markdown-body,
+.content {
+  color: #333 !important;
+  line-height: 1.8;
+}
+
+/* Ensure paragraphs are readable */
+p {
+  color: #333 !important;
+}
+
+/* Search Box */
+.form-control,
+input[type="search"],
+input[type="text"] {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid var(--factory-border) !important;
+  color: var(--factory-dark) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.form-control:focus,
+input[type="search"]:focus,
+input[type="text"]:focus {
+  border-color: var(--factory-orange) !important;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 107, 53, 0.3);
+}
