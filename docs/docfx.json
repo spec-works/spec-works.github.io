@@ -9,9 +9,6 @@
     "resource": [
       {
         "files": ["images/**"]
-      },
-      {
-        "files": ["styles/**"]
       }
     ],
     "output": "_site",
