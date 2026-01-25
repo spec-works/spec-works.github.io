@@ -7,8 +7,13 @@
   gap: 5px;
 }
 
+<<<<<<< HEAD
 a.navbar-brand > img#logo {
   padding-right: 5px !important;
+=======
+.navbar-brand img {
+  padding-right: 5px;
+>>>>>>> origin/main
 }
 
 /* Ensure navigation items are vertically aligned */
