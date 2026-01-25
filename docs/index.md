@@ -18,14 +18,23 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 
 | Part | Specification | Languages | Status |
 |------|---------------|-----------|--------|
-| [vCard](https://spec-works.github.io/vCard/) | [RFC 6350](https://www.rfc-editor.org/rfc/rfc6350) | .NET, Python, Rust | ✅ Active |
-| [JsonDiff](https://spec-works.github.io/JsonDiff/) | [RFC 6902](https://www.rfc-editor.org/rfc/rfc6902) | .NET | ✅ Active |
-| [iCalendar](https://spec-works.github.io/iCalendar/) | [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) | .NET | ✅ Active |
-| [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) | .NET | ✅ Active |
-| [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) | .NET | ✅ Active |
-| [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 | .NET | ✅ Active |
+| [vCard](https://spec-works.github.io/vCard/) | [RFC 6350](https://www.rfc-editor.org/rfc/rfc6350) - Contact Information | .NET, Python, Rust | ✅ Active |
+| [JsonDiff](https://spec-works.github.io/JsonDiff/) | [RFC 6902](https://www.rfc-editor.org/rfc/rfc6902) - JSON Patch | .NET | ✅ Active |
+| [iCalendar](https://spec-works.github.io/iCalendar/) | [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) - Calendar Data | .NET | ✅ Active |
+| [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - HTTP Rate Limits | .NET | ✅ Active |
+| [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) - Web Link Sets | .NET | ✅ Active |
+| [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | ✅ Active |
 
-[View detailed Parts catalog →](parts/index.md)
+[Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
+
+## Find Parts By Problem Space
+
+- **Contact/Address Book Data** → [vCard](https://spec-works.github.io/vCard/)
+- **Calendar/Event Data** → [iCalendar](https://spec-works.github.io/iCalendar/)
+- **JSON Comparison/Diff** → [JsonDiff](https://spec-works.github.io/JsonDiff/)
+- **HTTP Rate Limiting** → [RateLimiter](https://spec-works.github.io/RateLimiter/)
+- **Web Linking/Link Relations** → [linkset](https://spec-works.github.io/linkset/)
+- **Document Conversion (Markdown/Word)** → [MarkMyWord](https://spec-works.github.io/MarkMyWord/)
 
 ## Quick Start
 
