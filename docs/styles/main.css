@@ -7,10 +7,6 @@
   gap: 5px;
 }
 
-.navbar-brand > img#logo {
-  display: block;
-}
-
 /* Ensure navigation items are vertically aligned */
 .navbar-nav {
   align-items: center;
