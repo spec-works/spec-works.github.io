@@ -7,6 +7,10 @@
   gap: 5px;
 }
 
+.navbar-brand img {
+  padding-right: 5px;
+}
+
 /* Ensure navigation items are vertically aligned */
 .navbar-nav {
   align-items: center;
