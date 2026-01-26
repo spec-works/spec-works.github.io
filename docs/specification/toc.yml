@@ -1,5 +1,7 @@
 - name: Factory Specification
   href: factory-spec.md
+- name: Component Registry Specification
+  href: component-spec.md
 - name: Conventions
   href: conventions.md
 - name: Architecture Decision Records
