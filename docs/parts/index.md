@@ -102,6 +102,31 @@ Bidirectional conversion between Markdown and Microsoft Word (.docx) documents.
 
 ---
 
+### xRegistry MCP Server - Registry Access Protocol Server
+
+**Specifications**: 
+- [xRegistry Core v1.0-rc2](https://github.com/xregistry/spec/blob/main/core/spec.md)
+- [xRegistry HTTP Binding](https://github.com/xregistry/spec/blob/main/core/http.md)
+- [Model Context Protocol](https://spec.modelcontextprotocol.io/specification/)
+
+Model Context Protocol (MCP) server for accessing and searching xRegistry instances. Enables AI assistants to discover and interact with software component registries.
+
+**Available Implementations**:
+- **TypeScript/Node.js**: [@spec-works/xregistry-mcp-server](https://www.npmjs.com/package/@spec-works/xregistry-mcp-server) on npm
+
+**Features**:
+- Connect to any xRegistry instance
+- List groups and resources
+- Search across registries
+- Export registry data
+- 7 MCP tools for AI assistant integration
+
+**Documentation**: [https://github.com/spec-works/xRegistry-MCP-Server](https://github.com/spec-works/xRegistry-MCP-Server)
+
+**Repository**: [github.com/spec-works/xRegistry-MCP-Server](https://github.com/spec-works/xRegistry-MCP-Server)
+
+---
+
 ## Finding the Right Part
 
 ### By Problem Space
@@ -112,6 +137,7 @@ Bidirectional conversion between Markdown and Microsoft Word (.docx) documents.
 - **HTTP Rate Limiting** → RateLimiter
 - **Web Linking/Link Relations** → linkset
 - **Document Conversion (Markdown/Word)** → MarkMyWord
+- **xRegistry/Component Registry Access** → xRegistry MCP Server
 
 ### By Specification
 
@@ -127,12 +153,15 @@ Use the table below to find Parts by their implementing specification:
 | draft-ietf-httpapi-ratelimit-headers | [RateLimiter](#ratelimiter---http-rate-limit-client) | Active |
 | CommonMark 0.31.2 | [MarkMyWord](#markMyword---markdown--word-converter) | Active |
 | ECMA-376 | [MarkMyWord](#markMyword---markdown--word-converter) | Active |
+| xRegistry v1.0-rc2 | [xRegistry MCP Server](#xregistry-mcp-server---registry-access-protocol-server) | Active |
+| Model Context Protocol | [xRegistry MCP Server](#xregistry-mcp-server---registry-access-protocol-server) | Active |
 
 ### By Language
 
 | Language | Available Parts |
 |----------|----------------|
-| **.NET** | All parts (vCard, JsonDiff, iCalendar, RateLimiter, linkset, MarkMyWord) |
+| **.NET** | vCard, JsonDiff, iCalendar, RateLimiter, linkset, MarkMyWord |
+| **TypeScript/Node.js** | xRegistry MCP Server |
 | **Python** | vCard |
 | **Rust** | vCard |
 
@@ -153,6 +182,16 @@ dotnet add package RateLimitClient
 # CLI tools (install globally)
 dotnet tool install --global SpecWorks.JsonDiff.Cli
 dotnet tool install --global SpecWorks.MarkMyWord.Cli
+```
+
+### TypeScript/Node.js (npm)
+
+```bash
+# MCP Server
+npm install @spec-works/xregistry-mcp-server
+
+# Or use with npx
+npx @spec-works/xregistry-mcp-server
 ```
 
 ### Python (PyPI)

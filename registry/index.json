@@ -125,9 +125,9 @@
       "owner": "SpecWorks Factory",
       "namespace": "spec-works",
       "createdat": "2024-01-01T00:00:00Z",
-      "modifiedat": "2024-01-26T00:00:00Z",
+      "modifiedat": "2024-01-26T02:00:00Z",
       "componentsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components",
-      "componentscount": 6,
+      "componentscount": 7,
       "components": {
         "linkset": {
           "componentid": "linkset",
@@ -265,6 +265,29 @@
           "status": "active",
           "maturity": "stable",
           "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/jsondiff/versions",
+          "versionscount": 1
+        },
+        "xregistry-mcp-server": {
+          "componentid": "xregistry-mcp-server",
+          "versionid": "1.0.0",
+          "name": "xRegistry MCP Server",
+          "description": "Model Context Protocol server for accessing and searching xRegistry instances",
+          "documentation": "https://github.com/spec-works/xRegistry-MCP-Server",
+          "epoch": 1,
+          "self": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/xregistry-mcp-server",
+          "xid": "/componentgroups/specification-libs/components/xregistry-mcp-server",
+          "createdat": "2024-01-26T02:00:00Z",
+          "modifiedat": "2024-01-26T02:00:00Z",
+          "componenttype": "tool",
+          "language": "typescript",
+          "framework": "nodejs",
+          "license": "MIT",
+          "repository": "https://github.com/spec-works/xRegistry-MCP-Server",
+          "homepage": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/xregistry-mcp-server",
+          "keywords": ["xregistry", "mcp", "model-context-protocol", "component-registry", "ai-tools"],
+          "status": "active",
+          "maturity": "beta",
+          "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/xregistry-mcp-server/versions",
           "versionscount": 1
         }
       }
