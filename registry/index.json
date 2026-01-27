@@ -127,7 +127,7 @@
       "createdat": "2024-01-01T00:00:00Z",
       "modifiedat": "2024-01-26T02:00:00Z",
       "componentsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components",
-      "componentscount": 7,
+      "componentscount": 8,
       "components": {
         "linkset": {
           "componentid": "linkset",
@@ -288,6 +288,29 @@
           "status": "active",
           "maturity": "beta",
           "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/xregistry-mcp-server/versions",
+          "versionscount": 1
+        },
+        "message": {
+          "componentid": "message",
+          "versionid": "0.5.0",
+          "name": "Message",
+          "description": "Software component for parsing, validating, and serializing Internet message format (message/rfc822) data",
+          "documentation": "https://github.com/spec-works/message",
+          "epoch": 1,
+          "self": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/message",
+          "xid": "/componentgroups/specification-libs/components/message",
+          "createdat": "2026-01-27T00:00:00Z",
+          "modifiedat": "2026-01-27T00:00:00Z",
+          "componenttype": "library",
+          "language": "csharp",
+          "framework": "dotnet",
+          "license": "MIT",
+          "repository": "https://github.com/spec-works/message",
+          "homepage": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/message",
+          "keywords": ["email", "message", "rfc822", "rfc5322", "mime", "rfc2045", "rfc2046"],
+          "status": "active",
+          "maturity": "beta",
+          "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/message/versions",
           "versionscount": 1
         }
       }

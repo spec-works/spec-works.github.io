@@ -1,0 +1,46 @@
+{
+  "linkset": [
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc5322.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "Internet Message Format"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc2045.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part One: Format of Internet Message Bodies"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc2046.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part Two: Media Types"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc2047.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part Three: Message Header Extensions for Non-ASCII Text"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc2822.html",
+      "type": "text/html",
+      "rel": "related",
+      "title": "Internet Message Format (obsoleted by RFC 5322)"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc822.html",
+      "type": "text/html",
+      "rel": "related",
+      "title": "Standard for ARPA Internet Text Messages (original)"
+    },
+    {
+      "href": "https://www.iana.org/assignments/media-types/message/rfc822",
+      "type": "text/html",
+      "rel": "related",
+      "title": "IANA Media Type Registration for message/rfc822"
+    }
+  ]
+}

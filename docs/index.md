@@ -24,6 +24,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - HTTP Rate Limits | .NET | ✅ Active |
 | [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) - Web Link Sets | .NET | ✅ Active |
 | [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | ✅ Active |
+| [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
@@ -35,6 +36,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **HTTP Rate Limiting** → [RateLimiter](https://spec-works.github.io/RateLimiter/)
 - **Web Linking/Link Relations** → [linkset](https://spec-works.github.io/linkset/)
 - **Document Conversion (Markdown/Word)** → [MarkMyWord](https://spec-works.github.io/MarkMyWord/)
+- **Email/Internet Messages** → [Message](https://spec-works.github.io/message/)
 
 ## Quick Start
 
@@ -45,6 +47,7 @@ Browse the [Parts catalog](parts/index.md) to find components by specification o
 - Need to parse contact information? → **vCard** (RFC 6350)
 - Need JSON Patch operations? → **JsonDiff** (RFC 6902)
 - Need calendar/event parsing? → **iCalendar** (RFC 5545)
+- Need email message parsing? → **Message** (RFC 5322 + MIME)
 
 ### Installing a Component
 

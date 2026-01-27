@@ -1,5 +1,5 @@
 {
-  "count": 6,
+  "count": 7,
   "parts": {
     "icalendar": {
       "id": "icalendar",
@@ -118,6 +118,26 @@
           "contenttype": "application/linkset+json",
           "id": "1.0.0",
           "parturl": "https://spec-works.github.io/registry/parts/vcard/versions/1.0.0/part.json"
+        }
+      }
+    },
+    "message": {
+      "id": "message",
+      "name": "Message Component",
+      "description": "Software component for parsing, validating, and serializing Internet message format (message/rfc822) data.",
+      "epoch": 1,
+      "self": "https://spec-works.github.io/registry/parts/message",
+      "defaultversionid": "0.5.0",
+      "defaultversionurl": "https://spec-works.github.io/registry/parts/message/versions/0.5.0",
+      "versionsurl": "https://spec-works.github.io/registry/parts/message/versions",
+      "versionscount": 1,
+      "versions": {
+        "0.5.0": {
+          "self": "https://spec-works.github.io/registry/parts/message/versions/0.5.0",
+          "epoch": 1,
+          "contenttype": "application/linkset+json",
+          "id": "0.5.0",
+          "parturl": "https://spec-works.github.io/registry/parts/message/versions/0.5.0/part.json"
         }
       }
     }
