@@ -4,7 +4,7 @@ This guide walks you through the complete process of creating a new Part for the
 
 ## Overview
 
-A **Part** is a software component that implements one or more public specifications. Creating a new Part involves 12 key steps.
+A **Part** is a software component that implements one or more public specifications. Creating a new Part involves 13 key steps.
 
 ## Quick Reference
 
@@ -21,7 +21,8 @@ A **Part** is a software component that implements one or more public specificat
 | 9 | Add CI/CD | ✅ |
 | 10 | Publish Packages | ✅ |
 | 11 | Register in xRegistry | ✅ |
-| 12 | Documentation | Optional |
+| 12 | Add to Landing Page | ✅ |
+| 13 | Documentation & GitHub Pages | ✅ |
 
 [View detailed step-by-step guide →](#step-by-step-guide)
 
@@ -58,10 +59,10 @@ Select a publicly available specification to implement.
 
 ### Step 3: Create Repository
 
-Create a new repository in the `spec-works` organization:
+Create a new **public** repository in the `spec-works` organization (must be public for GitHub Pages):
 
 ```bash
-git clone https://github.com/spec-works/PartName.git
+gh repo create spec-works/PartName --public --clone
 cd PartName
 ```
 
@@ -72,14 +73,30 @@ PartName/
 ├── README.md
 ├── specs.json
 ├── LICENSE (MIT)
+├── docs/
+│   ├── docfx.json
+│   ├── index.md
+│   ├── toc.yml
+│   ├── filterConfig.yml
+│   ├── .gitignore
+│   ├── api/
+│   │   └── index.md
+│   └── images/
 ├── testcases/
-│   ├── valid/
-│   └── invalid/
+│   ├── README.md
+│   ├── *.md / *.json (positive test cases)
+│   └── negative/
+│       └── *.json
 └── dotnet/ (or python/, rust/, etc.)
     ├── src/
     ├── tests/
     └── PartName.sln
 ```
+
+**Required files from the start:**
+- `LICENSE` — MIT license (copy from any existing Part)
+- `README.md` — see Step 5
+- `specs.json` — see Step 4
 
 ### Step 4: Create specs.json
 
@@ -165,7 +182,9 @@ public void ParseValid_Succeeds(string file)
 
 ### Step 9: Add CI/CD
 
-Create `.github/workflows/dotnet-test.yml`:
+Create **two** workflows in `.github/workflows/`:
+
+**`.github/workflows/dotnet-test.yml`** — runs tests on push/PR:
 
 ```yaml
 name: .NET Test
@@ -178,6 +197,62 @@ jobs:
       - uses: actions/setup-dotnet@v4
       - run: dotnet test dotnet/
 ```
+
+**`.github/workflows/docs.yml`** — builds and deploys DocFX documentation to GitHub Pages:
+
+```yaml
+name: Deploy Documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'dotnet/src/**'
+      - '.github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download shared template
+        run: |
+          curl -L -o template.zip https://github.com/spec-works/spec-works.github.io/archive/refs/heads/main.zip
+          unzip -q template.zip
+          mkdir -p docs/template
+          cp -r spec-works.github.io-main/docs/template/* docs/template/
+          rm -rf spec-works.github.io-main template.zip
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore dotnet/PartName.sln
+
+      - name: Install DocFX
+        run: dotnet tool install -g docfx
+
+      - name: Build documentation
+        run: docfx docs/docfx.json
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_site
+          force_orphan: true
+```
+
+> **Important:** The `dotnet restore` step is required so DocFX can resolve project dependencies when extracting API metadata.
 
 Add status badge to README.
 
@@ -199,44 +274,108 @@ Update `specs.json` with package links.
 
 ### Step 11: Register in xRegistry
 
-Registry updates automatically weekly, or trigger manually:
+Add your Part to the registry in the [spec-works.github.io](https://github.com/spec-works/spec-works.github.io) repository:
 
-```bash
-gh workflow run update-registry.yml
-```
+1. **Create registry entry** at `registry/parts/partname/`:
+   - `index.json` — Part metadata (id, name, description, version info)
+   - `versions/1.0.0/part.json` — Linkset with specification references
+
+2. **Update `registry/parts/index.json`** — add your Part entry and increment the `count`
+
+Use an existing Part (e.g., `registry/parts/markmydeck/`) as a template.
 
 Verify:
 ```bash
 curl https://spec-works.github.io/registry/parts/partname/ | jq .
 ```
 
-### Step 12: Documentation (Optional)
+### Step 12: Add to Landing Page
 
-Add DocFX documentation and deploy to GitHub Pages.
+Update the [spec-works.github.io](https://github.com/spec-works/spec-works.github.io) documentation to include your new Part:
+
+1. **`docs/index.md`** — Add row to the "Available Parts" table and entry to the "Find Parts By Problem Space" list
+2. **`docs/parts/index.md`** — Add full catalog entry with:
+   - Specification links
+   - Available implementations (NuGet packages, CLI tools)
+   - Documentation and repository links
+3. **`docs/parts/index.md`** — Update the "By Specification", "By Language", and "Installation Examples" sections
+
+### Step 13: Documentation & GitHub Pages
+
+Documentation is required for all Parts. Set up DocFX and GitHub Pages:
+
+**1. Create `docs/` folder** with these files (copy from an existing Part and adapt):
+
+| File | Purpose |
+|------|---------|
+| `docfx.json` | DocFX configuration — update project references and metadata |
+| `index.md` | Documentation home page — features, installation, usage examples |
+| `toc.yml` | Navigation bar — links to home, API reference, GitHub |
+| `filterConfig.yml` | API filter — excludes System/Microsoft types |
+| `.gitignore` | Excludes build outputs (`_site/`, `obj/`, `api/*.yml`, `api/.manifest`) |
+| `api/index.md` | API reference landing page — list of namespaces with descriptions |
+| `images/` | Directory for documentation images (logo, screenshots) |
+
+> **Important:** The `docs/.gitignore` must exclude generated files (`api/*.yml`, `api/.manifest`) but **must track `api/index.md`** — this is the landing page for `/api/`. Without it, the API Reference link returns a 404.
+
+**2. Trigger the docs workflow** to create the `gh-pages` branch:
+
+```bash
+gh workflow run docs.yml --repo spec-works/PartName
+gh run watch  # wait for completion
+```
+
+**3. Enable GitHub Pages** on the repository:
+
+```bash
+gh api repos/spec-works/PartName/pages -X POST \
+  -f "source[branch]=gh-pages" -f "source[path]=/"
+```
+
+**4. Verify** the documentation site is live:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}" https://spec-works.github.io/PartName/
+# Should return 200
+
+curl -s -o /dev/null -w "%{http_code}" https://spec-works.github.io/PartName/api/
+# Should return 200 (API reference index page)
+```
 
 ## Checklist
 
 **Repository Setup**
-- [ ] Repository created
-- [ ] Standard structure
-- [ ] MIT License
+- [ ] Public repository created
+- [ ] Standard directory structure
+- [ ] MIT License file
 - [ ] .gitignore
 
 **Documentation**
-- [ ] README.md
-- [ ] specs.json
-- [ ] Registry badge
+- [ ] README.md with badge, description, installation, usage
+- [ ] specs.json (linkset descriptor)
+- [ ] `docs/` folder with DocFX configuration
+- [ ] `docs/api/index.md` (API reference landing page)
+- [ ] `docs/index.md` (documentation home page)
 
 **Implementation**
-- [ ] Test cases added
-- [ ] Core functionality
+- [ ] Test case data files added (`testcases/`)
+- [ ] Core functionality implemented
 - [ ] Unit tests
+- [ ] Integration tests (data-driven from test cases)
 - [ ] All tests passing
 
-**Publishing**
-- [ ] CI/CD workflow
-- [ ] Package published
-- [ ] Registry updated
+**CI/CD & Deployment**
+- [ ] `dotnet-test.yml` workflow (tests on push/PR)
+- [ ] `docs.yml` workflow (DocFX build and deploy to gh-pages)
+- [ ] GitHub Pages enabled (source: `gh-pages` branch)
+- [ ] Documentation site live and API reference accessible
+- [ ] Package published (NuGet, PyPI, etc.)
+
+**Registration**
+- [ ] xRegistry entry added (`registry/parts/partname/`)
+- [ ] `registry/parts/index.json` updated (entry + count)
+- [ ] Landing page updated (`docs/index.md` — Available Parts table + problem space)
+- [ ] Parts catalog updated (`docs/parts/index.md` — full entry + spec/language tables)
 
 ## Examples
 
