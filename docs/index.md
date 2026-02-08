@@ -44,7 +44,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 
 ### Finding a Component
 
-Browse the [Parts catalog](parts/index.md) to find components by specification or problem space:
+Browse the [Available Parts](#available-parts) table above, or search the [xRegistry catalog](https://spec-works.github.io/registry/) to find components by specification or problem space:
 
 - Need to parse contact information? → **vCard** (RFC 6350)
 - Need JSON Patch operations? → **JsonDiff** (RFC 6902)
@@ -160,4 +160,4 @@ All SpecWorks components are licensed under the [MIT License](https://opensource
 
 ---
 
-Ready to explore? [Browse the Parts catalog →](parts/index.md)
+Ready to explore? [Browse the xRegistry catalog →](https://spec-works.github.io/registry/)

@@ -294,11 +294,6 @@ curl https://spec-works.github.io/registry/parts/partname/ | jq .
 Update the [spec-works.github.io](https://github.com/spec-works/spec-works.github.io) documentation to include your new Part:
 
 1. **`docs/index.md`** — Add row to the "Available Parts" table and entry to the "Find Parts By Problem Space" list
-2. **`docs/parts/index.md`** — Add full catalog entry with:
-   - Specification links
-   - Available implementations (NuGet packages, CLI tools)
-   - Documentation and repository links
-3. **`docs/parts/index.md`** — Update the "By Specification", "By Language", and "Installation Examples" sections
 
 ### Step 13: Documentation & GitHub Pages
 
@@ -375,7 +370,6 @@ curl -s -o /dev/null -w "%{http_code}" https://spec-works.github.io/PartName/api
 - [ ] xRegistry entry added (`registry/parts/partname/`)
 - [ ] `registry/parts/index.json` updated (entry + count)
 - [ ] Landing page updated (`docs/index.md` — Available Parts table + problem space)
-- [ ] Parts catalog updated (`docs/parts/index.md` — full entry + spec/language tables)
 
 ## Examples
 
