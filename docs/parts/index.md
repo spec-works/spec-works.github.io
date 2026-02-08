@@ -102,6 +102,24 @@ Bidirectional conversion between Markdown and Microsoft Word (.docx) documents.
 
 ---
 
+### MarkMyDeck - Markdown → PowerPoint Converter
+
+**Specification**:
+- [CommonMark 0.31.2](https://spec.commonmark.org/0.31.2/)
+- [ECMA-376 - Office Open XML File Formats](https://www.ecma-international.org/publications-and-standards/standards/ecma-376/)
+
+Convert CommonMark/GitHub Flavored Markdown into Microsoft PowerPoint (.pptx) presentations.
+
+**Available Implementations**:
+- **.NET**: [SpecWorks.MarkMyDeck](https://www.nuget.org/packages/SpecWorks.MarkMyDeck) on NuGet
+- **CLI Tool**: [SpecWorks.MarkMyDeck.CLI](https://www.nuget.org/packages/SpecWorks.MarkMyDeck.CLI) on NuGet
+
+**Documentation**: [https://spec-works.github.io/MarkMyDeck/](https://spec-works.github.io/MarkMyDeck/)
+
+**Repository**: [github.com/spec-works/MarkMyDeck](https://github.com/spec-works/MarkMyDeck)
+
+---
+
 ### xRegistry MCP Server - Registry Access Protocol Server
 
 **Specifications**: 
@@ -137,6 +155,7 @@ Model Context Protocol (MCP) server for accessing and searching xRegistry instan
 - **HTTP Rate Limiting** → RateLimiter
 - **Web Linking/Link Relations** → linkset
 - **Document Conversion (Markdown/Word)** → MarkMyWord
+- **Presentation Generation (Markdown/PowerPoint)** → MarkMyDeck
 - **xRegistry/Component Registry Access** → xRegistry MCP Server
 
 ### By Specification
@@ -153,6 +172,8 @@ Use the table below to find Parts by their implementing specification:
 | draft-ietf-httpapi-ratelimit-headers | [RateLimiter](#ratelimiter---http-rate-limit-client) | Active |
 | CommonMark 0.31.2 | [MarkMyWord](#markMyword---markdown--word-converter) | Active |
 | ECMA-376 | [MarkMyWord](#markMyword---markdown--word-converter) | Active |
+| CommonMark 0.31.2 | [MarkMyDeck](#markmydeck---markdown--powerpoint-converter) | Active |
+| ECMA-376 | [MarkMyDeck](#markmydeck---markdown--powerpoint-converter) | Active |
 | xRegistry v1.0-rc2 | [xRegistry MCP Server](#xregistry-mcp-server---registry-access-protocol-server) | Active |
 | Model Context Protocol | [xRegistry MCP Server](#xregistry-mcp-server---registry-access-protocol-server) | Active |
 
@@ -160,7 +181,7 @@ Use the table below to find Parts by their implementing specification:
 
 | Language | Available Parts |
 |----------|----------------|
-| **.NET** | vCard, JsonDiff, iCalendar, RateLimiter, linkset, MarkMyWord |
+| **.NET** | vCard, JsonDiff, iCalendar, RateLimiter, linkset, MarkMyWord, MarkMyDeck |
 | **TypeScript/Node.js** | xRegistry MCP Server |
 | **Python** | vCard |
 | **Rust** | vCard |
@@ -182,6 +203,7 @@ dotnet add package RateLimitClient
 # CLI tools (install globally)
 dotnet tool install --global SpecWorks.JsonDiff.Cli
 dotnet tool install --global SpecWorks.MarkMyWord.Cli
+dotnet tool install --global SpecWorks.MarkMyDeck.CLI
 ```
 
 ### TypeScript/Node.js (npm)

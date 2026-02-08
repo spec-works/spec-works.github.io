@@ -24,6 +24,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - HTTP Rate Limits | .NET | ✅ Active |
 | [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) - Web Link Sets | .NET | ✅ Active |
 | [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | ✅ Active |
+| [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/) | CommonMark 0.31.2 + ECMA-376 - Markdown/PowerPoint Conversion | .NET | ✅ Active |
 | [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
@@ -36,6 +37,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **HTTP Rate Limiting** → [RateLimiter](https://spec-works.github.io/RateLimiter/)
 - **Web Linking/Link Relations** → [linkset](https://spec-works.github.io/linkset/)
 - **Document Conversion (Markdown/Word)** → [MarkMyWord](https://spec-works.github.io/MarkMyWord/)
+- **Presentation Generation (Markdown/PowerPoint)** → [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/)
 - **Email/Internet Messages** → [Message](https://spec-works.github.io/message/)
 
 ## Quick Start
