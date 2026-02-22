@@ -16,16 +16,16 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 
 ## Available Parts
 
-| Part | Specification | Languages | Status |
-|------|---------------|-----------|--------|
-| [vCard](https://spec-works.github.io/vCard/) | [RFC 6350](https://www.rfc-editor.org/rfc/rfc6350) - Contact Information | .NET, Python, Rust | ✅ Active |
-| [JsonDiff](https://spec-works.github.io/JsonDiff/) | [RFC 6902](https://www.rfc-editor.org/rfc/rfc6902) - JSON Patch | .NET | ✅ Active |
-| [iCalendar](https://spec-works.github.io/iCalendar/) | [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) - Calendar Data | .NET | ✅ Active |
-| [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - HTTP Rate Limits | .NET | ✅ Active |
-| [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) - Web Link Sets | .NET | ✅ Active |
-| [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | ✅ Active |
-| [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/) | CommonMark 0.31.2 + ECMA-376 - Markdown/PowerPoint Conversion | .NET | ✅ Active |
-| [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | ✅ Active |
+| Part | Specification | Languages | Test Cases | Status |
+|------|---------------|-----------|------------|--------|
+| [vCard](https://spec-works.github.io/vCard/) | [RFC 6350](https://www.rfc-editor.org/rfc/rfc6350) - Contact Information | .NET, Python, Rust | [testcases/](https://github.com/spec-works/vCard/tree/main/testcases) | ✅ Active |
+| [JsonDiff](https://spec-works.github.io/JsonDiff/) | [RFC 6902](https://www.rfc-editor.org/rfc/rfc6902) - JSON Patch | .NET | [TestCases/](https://github.com/spec-works/JsonDiff/tree/main/TestCases) | ✅ Active |
+| [iCalendar](https://spec-works.github.io/iCalendar/) | [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) - Calendar Data | .NET | [testcases/](https://github.com/spec-works/iCalendar/tree/main/testcases) | ✅ Active |
+| [RateLimiter](https://spec-works.github.io/RateLimiter/) | [IETF Draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/) - HTTP Rate Limits | .NET | [testcases/](https://github.com/spec-works/RateLimiter/tree/main/testcases) | ✅ Active |
+| [linkset](https://spec-works.github.io/linkset/) | [RFC 9264](https://www.rfc-editor.org/rfc/rfc9264) - Web Link Sets | .NET | [testcases/](https://github.com/spec-works/linkset/tree/main/testcases) | ✅ Active |
+| [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | — | ✅ Active |
+| [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/) | CommonMark 0.31.2 + ECMA-376 - Markdown/PowerPoint Conversion | .NET | [testcases/](https://github.com/spec-works/MarkMyDeck/tree/main/testcases) | ✅ Active |
+| [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | [testcases/](https://github.com/spec-works/message/tree/main/testcases) | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
