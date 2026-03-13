@@ -1,0 +1,20 @@
+{
+  "id": "sidemark",
+  "name": "Sidemark Component",
+  "description": "Software component for parsing, validating, and serializing Markdown Review Sidecar Format (MRSF) files.",
+  "epoch": 1,
+  "self": "https://spec-works.github.io/registry/parts/sidemark",
+  "defaultversionid": "1.0.0",
+  "defaultversionurl": "https://spec-works.github.io/registry/parts/sidemark/versions/1.0.0",
+  "versionsurl": "https://spec-works.github.io/registry/parts/sidemark/versions",
+  "versionscount": 1,
+  "versions": {
+    "1.0.0": {
+      "self": "https://spec-works.github.io/registry/parts/sidemark/versions/1.0.0",
+      "epoch": 1,
+      "contenttype": "application/linkset+json",
+      "id": "1.0.0",
+      "parturl": "https://spec-works.github.io/registry/parts/sidemark/versions/1.0.0/part.json"
+    }
+  }
+}

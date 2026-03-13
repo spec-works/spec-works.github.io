@@ -1,0 +1,28 @@
+{
+  "linkset": [
+    {
+      "href": "https://sidemark.org/specification.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "Markdown Review Sidecar Format (MRSF) v1.0 Specification"
+    },
+    {
+      "href": "https://github.com/wictorwilen/MRSF/blob/main/mrsf.schema.json",
+      "type": "application/schema+json",
+      "rel": "describedby",
+      "title": "MRSF JSON Schema"
+    },
+    {
+      "href": "https://github.com/wictorwilen/MRSF",
+      "type": "text/html",
+      "rel": "related",
+      "title": "MRSF Reference Implementation (GitHub)"
+    },
+    {
+      "href": "https://sidemark.org",
+      "type": "text/html",
+      "rel": "related",
+      "title": "Sidemark Project Website"
+    }
+  ]
+}

@@ -127,7 +127,7 @@
       "createdat": "2024-01-01T00:00:00Z",
       "modifiedat": "2024-01-26T02:00:00Z",
       "componentsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components",
-      "componentscount": 8,
+      "componentscount": 9,
       "components": {
         "linkset": {
           "componentid": "linkset",
@@ -311,6 +311,29 @@
           "status": "active",
           "maturity": "beta",
           "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/message/versions",
+          "versionscount": 1
+        },
+        "sidemark": {
+          "componentid": "sidemark",
+          "versionid": "1.0.0",
+          "name": "Sidemark",
+          "description": "Software component for parsing, validating, and serializing Markdown Review Sidecar Format (MRSF) files",
+          "documentation": "https://github.com/spec-works/Sidemark",
+          "epoch": 1,
+          "self": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/sidemark",
+          "xid": "/componentgroups/specification-libs/components/sidemark",
+          "createdat": "2026-03-13T00:00:00Z",
+          "modifiedat": "2026-03-13T00:00:00Z",
+          "componenttype": "library",
+          "language": "csharp",
+          "framework": "dotnet",
+          "license": "MIT",
+          "repository": "https://github.com/spec-works/Sidemark",
+          "homepage": "https://sidemark.org",
+          "keywords": ["mrsf", "sidemark", "markdown", "review", "comments", "sidecar", "yaml"],
+          "status": "active",
+          "maturity": "beta",
+          "versionsurl": "https://spec-works.github.io/registry/componentgroups/specification-libs/components/sidemark/versions",
           "versionscount": 1
         }
       }
