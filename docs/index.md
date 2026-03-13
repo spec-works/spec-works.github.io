@@ -26,7 +26,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [MarkMyWord](https://spec-works.github.io/MarkMyWord/) | CommonMark 0.31.2 + ECMA-376 - Markdown/Word Conversion | .NET | — | ✅ Active |
 | [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/) | CommonMark 0.31.2 + ECMA-376 - Markdown/PowerPoint Conversion | .NET | [testcases/](https://github.com/spec-works/MarkMyDeck/tree/main/testcases) | ✅ Active |
 | [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | [testcases/](https://github.com/spec-works/message/tree/main/testcases) | ✅ Active |
-| [Sidemark](https://github.com/spec-works/Sidemark) | [MRSF v1.0](https://sidemark.org/specification.html) - Markdown Review Sidecar Format | .NET | [testcases/](https://github.com/spec-works/Sidemark/tree/main/testcases) | ✅ Active |
+| [Sidemark](https://spec-works.github.io/Sidemark/) | [MRSF v1.0](https://sidemark.org/specification.html) - Markdown Review Sidecar Format | .NET | [testcases/](https://github.com/spec-works/Sidemark/tree/main/testcases) | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
@@ -40,7 +40,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **Document Conversion (Markdown/Word)** → [MarkMyWord](https://spec-works.github.io/MarkMyWord/)
 - **Presentation Generation (Markdown/PowerPoint)** → [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/)
 - **Email/Internet Messages** → [Message](https://spec-works.github.io/message/)
-- **Markdown Review Comments** → [Sidemark](https://github.com/spec-works/Sidemark)
+- **Markdown Review Comments** → [Sidemark](https://spec-works.github.io/Sidemark/)
 
 ## Quick Start
 

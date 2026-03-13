@@ -329,7 +329,7 @@
           "framework": "dotnet",
           "license": "MIT",
           "repository": "https://github.com/spec-works/Sidemark",
-          "homepage": "https://sidemark.org",
+          "homepage": "https://spec-works.github.io/Sidemark/",
           "keywords": ["mrsf", "sidemark", "markdown", "review", "comments", "sidecar", "yaml"],
           "status": "active",
           "maturity": "beta",
