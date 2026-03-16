@@ -27,6 +27,8 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/) | CommonMark 0.31.2 + ECMA-376 - Markdown/PowerPoint Conversion | .NET | [testcases/](https://github.com/spec-works/MarkMyDeck/tree/main/testcases) | ✅ Active |
 | [Message](https://spec-works.github.io/message/) | [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) + [MIME](https://www.rfc-editor.org/rfc/rfc2045) - Email Messages | .NET | [testcases/](https://github.com/spec-works/message/tree/main/testcases) | ✅ Active |
 | [Sidemark](https://spec-works.github.io/Sidemark/) | [MRSF v1.0](https://sidemark.org/specification.html) - Markdown Review Sidecar Format | .NET | [testcases/](https://github.com/spec-works/Sidemark/tree/main/testcases) | ✅ Active |
+| [OfficeTalk](https://spec-works.github.io/OfficeTalk/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Deterministic Office Document Operations | .NET | [testcases/](https://github.com/spec-works/OfficeTalk/tree/main/testcases) | ✅ Active |
+| [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Execution Engine + CLI | .NET | [testcases/](https://github.com/spec-works/OfficeTalkEngine/tree/main/testcases) | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
@@ -41,6 +43,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **Presentation Generation (Markdown/PowerPoint)** → [MarkMyDeck](https://spec-works.github.io/MarkMyDeck/)
 - **Email/Internet Messages** → [Message](https://spec-works.github.io/message/)
 - **Markdown Review Comments** → [Sidemark](https://spec-works.github.io/Sidemark/)
+- **Office Document Operations (Word/Excel/PowerPoint)** → [OfficeTalk](https://spec-works.github.io/OfficeTalk/) + [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/)
 
 ## Quick Start
 
