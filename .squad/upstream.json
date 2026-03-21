@@ -1,0 +1,12 @@
+{
+  "upstreams": [
+    {
+      "name": "factory",
+      "type": "git",
+      "source": "https://github.com/spec-works/factory-squad.git",
+      "added_at": "2026-03-21T11:54:21.610Z",
+      "last_synced": "2026-03-21T11:54:22.146Z",
+      "ref": "main"
+    }
+  ]
+}
