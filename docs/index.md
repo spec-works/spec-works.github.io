@@ -29,6 +29,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [Sidemark](https://spec-works.github.io/Sidemark/) | [MRSF v1.0](https://sidemark.org/specification.html) - Markdown Review Sidecar Format | .NET | [testcases/](https://github.com/spec-works/Sidemark/tree/main/testcases) | ✅ Active |
 | [OfficeTalk](https://spec-works.github.io/OfficeTalk/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Deterministic Office Document Operations | .NET | [testcases/](https://github.com/spec-works/OfficeTalk/tree/main/testcases) | ✅ Active |
 | [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Execution Engine + CLI | .NET | [testcases/](https://github.com/spec-works/OfficeTalkEngine/tree/main/testcases) | ✅ Active |
+| [A2A-Ask](https://spec-works.github.io/A2A-Ask/) | [A2A Protocol](https://a2a-protocol.org/latest/specification/) - Agent-to-Agent Communication CLI | .NET | — | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
@@ -44,8 +45,35 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **Email/Internet Messages** → [Message](https://spec-works.github.io/message/)
 - **Markdown Review Comments** → [Sidemark](https://spec-works.github.io/Sidemark/)
 - **Office Document Operations (Word/Excel/PowerPoint)** → [OfficeTalk](https://spec-works.github.io/OfficeTalk/) + [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/)
+- **Agent-to-Agent Communication (A2A Protocol)** → [A2A-Ask](https://spec-works.github.io/A2A-Ask/)
 
 ## Quick Start
+
+### AI Agent Skills & Plugins
+
+SpecWorks provides **AI agent skills** that teach coding assistants (GitHub Copilot CLI, Claude Code, VS Code Copilot, Cursor) how to use SpecWorks tools. Install from the [SpecWorks Plugins Repository](https://github.com/spec-works/plugins):
+
+| Plugin | Type | Description | Install |
+|--------|------|-------------|---------|
+| [a2a-ask](https://github.com/spec-works/plugins/tree/main/plugins/a2a-ask) | Skill | Interact with remote A2A protocol agents | `dotnet tool install --global SpecWorks.A2A-Ask` |
+| [markmyword](https://github.com/spec-works/plugins/tree/main/plugins/markmyword) | Skill | Markdown ↔ Word (.docx) conversion | `dotnet tool install --global SpecWorks.MarkMyWord.CLI` |
+| [markmydeck](https://github.com/spec-works/plugins/tree/main/plugins/markmydeck) | Skill | Markdown → PowerPoint (.pptx) conversion | `dotnet tool install --global SpecWorks.MarkMyDeck.CLI` |
+| [officetalk](https://github.com/spec-works/plugins/tree/main/plugins/officetalk) | Skill | Deterministic Office document operations | `dotnet tool install --global SpecWorks.OfficeTalkEngine.CLI` |
+| [xregistry-mcp](https://github.com/spec-works/plugins/tree/main/plugins/xregistry-mcp) | MCP Server | xRegistry specification discovery | See [README](https://github.com/spec-works/xRegistry-MCP-Server) |
+
+**To install a skill** into your AI coding assistant, copy the SKILL.md from the plugin folder into your skills directory:
+
+```bash
+# GitHub Copilot CLI (personal)
+mkdir -p ~/.copilot/skills/<plugin-name>
+cp SKILL.md ~/.copilot/skills/<plugin-name>/SKILL.md
+
+# Claude Code (personal)
+mkdir -p ~/.claude/skills/<plugin-name>
+cp SKILL.md ~/.claude/skills/<plugin-name>/SKILL.md
+```
+
+[Browse all plugins →](https://github.com/spec-works/plugins)
 
 ### Finding a Component
 
