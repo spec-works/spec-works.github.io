@@ -30,6 +30,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [OfficeTalk](https://spec-works.github.io/OfficeTalk/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Deterministic Office Document Operations | .NET | [testcases/](https://github.com/spec-works/OfficeTalk/tree/main/testcases) | ✅ Active |
 | [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/) | [OfficeTalk/1.0](https://github.com/spec-works/OfficeTalk/blob/main/officetalk-spec.md) - Execution Engine + CLI | .NET | [testcases/](https://github.com/spec-works/OfficeTalkEngine/tree/main/testcases) | ✅ Active |
 | [A2A-Ask](https://spec-works.github.io/A2A-Ask/) | [A2A Protocol](https://a2a-protocol.org/latest/specification/) - Agent-to-Agent Communication CLI | .NET | — | ✅ Active |
+| [AI Catalog](https://spec-works.github.io/ai-catalog/) | [AI Card](https://agent-card.github.io/ai-card/) - AI Artifact Catalog Format | .NET, Python | [testcases/](https://github.com/spec-works/ai-catalog/tree/main/testcases) | ✅ Active |
 
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
@@ -46,6 +47,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **Markdown Review Comments** → [Sidemark](https://spec-works.github.io/Sidemark/)
 - **Office Document Operations (Word/Excel/PowerPoint)** → [OfficeTalk](https://spec-works.github.io/OfficeTalk/) + [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/)
 - **Agent-to-Agent Communication (A2A Protocol)** → [A2A-Ask](https://spec-works.github.io/A2A-Ask/)
+- **AI Artifact Catalogs** → [AI Catalog](https://spec-works.github.io/ai-catalog/)
 
 ## Quick Start
 
