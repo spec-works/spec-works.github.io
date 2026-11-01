@@ -46,7 +46,21 @@ Documentation is automatically built and deployed to GitHub Pages when changes a
 The GitHub Actions workflow:
 1. Installs DocFX
 2. Builds the documentation site
-3. Deploys to GitHub Pages
+3. Generates the AI Catalog from the `spec-works/plugins` marketplace
+4. Publishes plugin files under `.well-known/plugins/` and resolves skill entries to
+   their `SKILL.md` documents using absolute HTTPS URLs
+5. Deploys to GitHub Pages
+
+`scripts/publish_catalog.py` normalizes catalog entry types and checks every
+declared skill exists before publishing. Missing artifacts fail the build instead
+of producing a catalog containing broken directory URLs. Hidden plugin files such
+as `.mcp.json` are copied along with skill content.
+
+Run the publisher regression checks with:
+
+```bash
+python -m unittest discover -s scripts -p "test_*.py"
+```
 
 ## Contributing
 

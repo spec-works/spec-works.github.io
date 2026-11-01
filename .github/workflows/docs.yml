@@ -48,7 +48,9 @@ jobs:
         with:
           repository: spec-works/plugins
           path: _plugins
-          sparse-checkout: .github/plugin/marketplace.json
+          sparse-checkout: |
+            .github/plugin/marketplace.json
+            plugins/
           sparse-checkout-cone-mode: false
 
       - name: Checkout ai-catalog CLI source
@@ -67,9 +69,19 @@ jobs:
         run: |
           mkdir -p docs/_site/.well-known
           dotnet run --project _ai-catalog/dotnet/src/AiCatalog.Cli/AiCatalog.Cli.csproj -c Release --no-build -- \
-            convert marketplace \
+            migrate \
             _plugins/.github/plugin/marketplace.json \
             -o docs/_site/.well-known/ai-catalog.json
+
+      - name: Publish catalog artifacts and resolve skill URLs
+        run: |
+          python3 -m unittest discover -s scripts -p "test_*.py"
+          python3 scripts/publish_catalog.py \
+            docs/_site/.well-known/ai-catalog.json \
+            _plugins/.github/plugin/marketplace.json \
+            _plugins \
+            docs/_site \
+            --site-url https://spec-works.github.io
 
       # --- End AI Catalog generation ---
 
