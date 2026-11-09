@@ -32,6 +32,14 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 | [A2A-Ask](https://spec-works.github.io/A2A-Ask/) | [A2A Protocol](https://a2a-protocol.org/latest/specification/) - Agent-to-Agent Communication CLI | .NET | — | ✅ Active |
 | [AI Catalog](https://spec-works.github.io/ai-catalog/) | [AI Card](https://agent-card.github.io/ai-card/) - AI Artifact Catalog Format | .NET, Python | [testcases/](https://github.com/spec-works/ai-catalog/tree/main/testcases) | ✅ Active |
 
+### Incubating Tools
+
+These tools support the factory ecosystem; their preview status is not a claim of specification-wide conformance.
+
+| Tool | Purpose | Status |
+|------|---------|--------|
+| [RepoYak](https://github.com/spec-works/RepoYak) | Turn local Git repositories into addressable A2A agents with Copilot sessions, skills, MCP capabilities, and AI Catalog discovery | Preview `0.2.0-preview.4` |
+
 [Explore the full xRegistry catalog →](https://spec-works.github.io/registry/)
 
 ## Find Parts By Problem Space
@@ -48,6 +56,7 @@ SpecWorks is a **Factory pattern system** for creating, cataloging, and distribu
 - **Office Document Operations (Word/Excel/PowerPoint)** → [OfficeTalk](https://spec-works.github.io/OfficeTalk/) + [OfficeTalkEngine](https://spec-works.github.io/OfficeTalkEngine/)
 - **Agent-to-Agent Communication (A2A Protocol)** → [A2A-Ask](https://spec-works.github.io/A2A-Ask/)
 - **AI Artifact Catalogs** → [AI Catalog](https://spec-works.github.io/ai-catalog/)
+- **Repository-Backed Agents** → [RepoYak](https://github.com/spec-works/RepoYak)
 
 ## Quick Start
 
@@ -58,6 +67,7 @@ SpecWorks provides **AI agent skills** that teach coding assistants (GitHub Copi
 | Plugin | Type | Description | Install |
 |--------|------|-------------|---------|
 | [a2a-ask](https://github.com/spec-works/plugins/tree/main/plugins/a2a-ask) | Skill | Interact with remote A2A protocol agents | `dotnet tool install --global SpecWorks.A2A-Ask` |
+| [repoyak](https://github.com/spec-works/plugins/tree/main/plugins/repoyak) | Skill | Create and manage repository-backed A2A agents | `dotnet tool install --global SpecWorks.RepoYak.Cli --version 0.2.0-preview.4` |
 | [markmyword](https://github.com/spec-works/plugins/tree/main/plugins/markmyword) | Skill | Markdown ↔ Word (.docx) conversion | `dotnet tool install --global SpecWorks.MarkMyWord.CLI` |
 | [markmydeck](https://github.com/spec-works/plugins/tree/main/plugins/markmydeck) | Skill | Markdown → PowerPoint (.pptx) conversion | `dotnet tool install --global SpecWorks.MarkMyDeck.CLI` |
 | [officetalk](https://github.com/spec-works/plugins/tree/main/plugins/officetalk) | Skill | Deterministic Office document operations | `dotnet tool install --global SpecWorks.OfficeTalkEngine.CLI` |
